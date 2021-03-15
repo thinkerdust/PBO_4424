@@ -10,7 +10,7 @@ public class Kalkulator {
         System.out.println("Masukkan angka kedua :");
         num2 = inp.nextDouble();
 
-        System.out.println("Masukkan operator [tambah (+), kurang (-), kali (*), bagi (/)] ");
+        System.out.println("Masukkan operator [tambah (+), kurang (-), kali (*), bagi (/), modulus (%)] ");
         char operator = inp.next().charAt(0);
         double output = 0.0;
         switch (operator){
@@ -25,6 +25,9 @@ public class Kalkulator {
                 break;
             case '/':
                 output = num1 / num2;
+                break;
+            case '%':
+                output = num1 % num2;
                 break;
             default:
                 System.out.println("maaf inputan anda salah!");
